@@ -1,5 +1,5 @@
 services:
-- hash: c8d61083abbcb54c4e67a6a678842903ecc749e5
+- hash: 44ab7d7ac248aeb2e14ae7f6fbc3a57e5e8e2ae6
   hash_length: 7
   name: api
   environments:
@@ -12,7 +12,6 @@ services:
       DOCKER_IMAGE: openshiftio/rhel-bayesian-bayesian-api
       METRICS_ACCUMULATOR_HOST: metrics-accumulator
       METRICS_ACCUMULATOR_PORT: 5200
-      DISABLE_UNKNOWN_PACKAGE_FLOW: 1
   - name: production
     parameters:
       FLASK_LOGGING_LEVEL: INFO
